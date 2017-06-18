@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<img src="http://placeskull.com/50/50" />-->
+<!--<h1>WarsawJS Workshop</h1>-->
+
+<!--<script>-->
+    <!--let $h1 = document.querySelector('h1');-->
+    <!--let shadow = $h1.attachShadow({mode: 'open'});-->
+    <!--console.log(shadow);-->
+<!--</script>-->
+
+<script>
+    class TshirtComponent extends HTMLElement {
+        constructor() {
+            super();
+            console.log('TshirtComponent created!');
+
+        }
+    }
+    window.customElements.define('tshirt-component', TshirtComponent);
+</script>
+<tshirt-component></tshirt-component>
+</body>
+</html>
