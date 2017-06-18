@@ -9,10 +9,6 @@ class MockupElement extends HTMLElement {
        // console.log(this.shadow);
     }
     connectedCallback() {
-        //console.log('MockupElement#connectedCallback');
-        this.template = document.querySelector('template');
-        //console.log(this.template);
-        //let $template =  document.querySelector('#mockup-template').content.cloneNode(true);
         let template = document.currentScript.ownerDocument.querySelector('#mockup-template').content.cloneNode(true);
 
          this.shadow.appendChild(template);
